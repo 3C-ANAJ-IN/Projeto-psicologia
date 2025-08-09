@@ -19,10 +19,22 @@ body {
     background-color: var(--paper);
     color: var(--asphalt);
     font-family: var(--fonte-padrao);
+    user-select: none;
+}
+
+header {
+    background-color: var(--espresso);
+    display: flex;
+    
+    h1 {
+        color: var(--peony);
+        
+    }
 }
 
 .titulo {
     display: flex;
+    margin-left: 10%;
 }
 
 .spananima1 {
@@ -45,9 +57,46 @@ body {
     animation: sumir 0.8s infinite forwards;
 }
 
+.navbar {
+    padding: 20px;
+    width: 50%;
+    text-align: right;
+    position: absolute;
+    right: 10%;
+    top: 15px;
+    
+    a {
+        margin: 0 2%;
+        text-decoration: none;
+        color: var(--peony);
+        text-align: center;
+    }
+    
+    a:hover {
+        border-bottom: dashed 1px var(--peony);
+        font-weight: 800;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 @keyframes apagar {
-    from { width: 7ch; opacity: 1; }
-    to { width: 0ch; opacity: 0; }
+    from {
+        width: 7ch;
+        opacity: 1;
+    }
+    
+    to {
+        width: 0ch;
+        opacity: 0;
+    }
 }
 
 @keyframes digitar {
@@ -71,26 +120,5 @@ body {
     
     100% {
         opacity: 100%;
-    }
-}
-
-.navbar {
-    border: solid 1px var(--asphalt);
-    padding: 20px;
-    margin: 0 5%;
-    width: 50%;
-    text-align: center;
-    
-    a {
-        margin: 0 5%;
-        text-decoration: none;
-        color: var(--asphalt);
-        text-align: center;
-    }
-    
-    a:hover {
-        border-bottom: dashed 1px var(--espresso);
-        font-weight: 800;
-        color: var(--espresso);
     }
 }
