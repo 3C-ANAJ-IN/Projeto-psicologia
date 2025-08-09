@@ -3,9 +3,28 @@
 
 :root {
     /*CORES*/
-    --cor-branca: #ffff;
-    --cor-preta: #000;
-
+    
+    --cor-teste: #aaaa;
+    --cor-branca: #fff;
+    --cor-bege: #faf4e6;
+    --cor-preta: #1f1b1b;
+    --cor-marrom: #5E3023;
+    
+    --cor-roxa-pastel: #ecd2ff;
+    --cor-roxa-escura: #7e5ba7;
+    --cor-azul-pastel: #cdecfe;
+    --cor-azul-escura: #3297d7;
+    --cor-verde-pastel: #e9fdde;
+    --cor-verde-escura: #57b488;
+    --cor-laranja-pastel: #ffdcae;
+    --cor-laranja-escura: #ee9f5b;
+    --cor-vermelha-pastel: #ffa19c;
+    --cor-vermelha-escura: #f86273;
+    --cor-rosa-pastel: #ffe5ee;
+    --cor-rosa-escura: #ff5b96;
+    --cor-amarela-pastel: #fef6c2;
+    --cor-amarela-escura: #f0cd3f;
+    
     /*FONTES*/
     --fonte-base: "Outfit", sans-serif;
     ;
@@ -16,9 +35,67 @@ body {
     margin: 0;
     padding: 0;
     text-align: justify;
+    background-color: var(--cor-bege);
 }
 
 a {
     text-decoration: none;
     color: var(--cor-preta);
+}
+
+.header {
+    display: flex;
+    margin: auto;
+    
+    #link1,
+    #link2,
+    #link3 {
+        margin: 0 20px 0 20px;
+    }
+    
+    span {
+        color: var(--cor-preta);
+    }
+    
+    h1 {
+        font-size: 50px;
+        justify-content: center;
+        margin: 20px 0 0 100px;
+        padding: 0;
+        display: flex;
+    }
+    
+    #logo {
+        margin: 30px 30px 30px 50px;
+        height: 50px;
+    }
+    
+    .todotexto {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        
+        .linksexternos {
+            margin: 30px 0 0 100px;
+        }
+    }
+}
+
+
+
+@keyframes corrandom {
+    0% {
+        filter: invert(16%) sepia(62%) saturate(846%) hue-rotate(331deg) brightness(93%) contrast(85%);
+        color: var(--cor-marrom);
+    }
+    
+    50% {
+        filter: invert(55%) sepia(41%) saturate(3033%) hue-rotate(305deg) brightness(99%) contrast(104%);
+        color: var(--cor-rosa-escura);
+    }
+    
+    100% {
+        filter: invert(16%) sepia(62%) saturate(846%) hue-rotate(331deg) brightness(93%) contrast(85%);
+        color: var(--cor-marrom);
+    }
 }
