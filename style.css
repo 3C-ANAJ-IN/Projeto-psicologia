@@ -13,5 +13,10 @@ body {
     color: var(--asphalt);
 }
 
+.ani1 {
+    display: block;
+}
 
-
+.ani2 {
+    display: none;
+}
