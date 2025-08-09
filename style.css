@@ -128,7 +128,7 @@ header {
 
 .labubu {
     margin-left: 10%;
-    
+   
     .texto {
         background-color: var(--peony);
         border: solid 1.5px var(--espresso);
@@ -162,9 +162,18 @@ header {
     img {
         height: 400px;
         position: absolute;
-        right: 0;
+        right: 5%;
         top: 30%;
         transform: rotate(0.05turn);
+    }
+    #descricao {
+        font-weight: 600;
+        font-style:italic;
+        opacity:0.5;
+        font-size: 13px;
+        text-align: right;
+        width: 550px;
+        margin: 0 auto;
     }
 }
 
