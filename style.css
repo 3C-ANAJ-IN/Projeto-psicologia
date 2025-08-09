@@ -10,6 +10,24 @@
     --fonte-cursiva: "Rouge Script", cursive;
     --fonte-padrao: "Outfit", sans-serif;
     
+    /*CURSORES*/
+    --cursor-pointer: url('icons/pointer.png'), pointer;
+    --cursor-auto: url('icons/normal.png'), auto;
+}
+
+html {
+    animation: surgir 2s forwards 1;
+    scroll-behavior: smooth;
+}
+
+@keyframes surgir {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1
+    }
 }
 
 body {
@@ -17,10 +35,26 @@ body {
     padding: 0;
     line-height: 1.5;
     background-color: var(--paper);
-    color: var(--asphalt);
+    color: var(--espresso);
     font-family: var(--fonte-padrao);
     user-select: none;
+    cursor: var(--cursor-auto);
 }
+
+a {
+    color: var(--asphalt);
+    text-decoration: none;
+}
+
+a:hover, button:hover{
+    cursor: var(--cursor-pointer);
+}
+
+
+
+
+
+
 
 header {
     background-color: var(--espresso);
@@ -28,7 +62,6 @@ header {
     
     h1 {
         color: var(--peony);
-        
     }
 }
 
@@ -78,6 +111,41 @@ header {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.labubu {
+    .texto {
+        background-color: var(--peony);
+        border: solid 1.5px var(--espresso);
+        padding: 2% 10%;
+        margin: 5% 10%;
+        border-radius: 50px;
+        text-align: justify;
+    }
+    
+    button {
+        text-transform: capitalize;
+        background-color: var(--espresso);
+        font-weight: 600;
+        color: var(--peony);
+        border: solid 2px var(--espresso);
+        padding: 2% 5%;
+        border-radius: 25px;
+        margin: 3% 0;
+    }
+}
 
 
 
