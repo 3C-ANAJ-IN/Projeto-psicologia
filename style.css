@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rouge+Script&family=Tangerine:wght@400;700&display=swap');
+
 :root {
     --espresso: #3E2723;
     --peony: #f4c9d6;
     --asphalt: #302f2c;
     --paper: #efede3;
+    
+    --fonte-gracinha: "Tangerine", cursive;
+    --fonte-cursiva: "Rouge Script", cursive;
+    --fonte-padrao: "Outfit", sans-serif;
+    
 }
 
 body {
@@ -11,12 +18,79 @@ body {
     line-height: 1.5;
     background-color: var(--paper);
     color: var(--asphalt);
+    font-family: var(--fonte-padrao);
+}
+
+.titulo {
+    display: flex;
+}
+
+.spananima1 {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline;
+    animation: apagar 1s steps(7, end) forwards;
+    animation-delay: 01s;
 }
 
 .spananima2 {
-    display: none;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0ch;
+    animation: digitar 2s steps(19, end) forwards;
+    animation-delay: 2.2s;
+}
+
+.sumir {
+    animation: sumir 0.8s infinite forwards;
+}
+
+@keyframes apagar {
+    from { width: 7ch; opacity: 1; }
+    to { width: 0ch; opacity: 0; }
+}
+
+@keyframes digitar {
+    from {
+        width: 0%;
+    }
+    
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes sumir {
+    0% {
+        opacity: 100%;
+    }
+    
+    50% {
+        opacity: 0%;
+    }
+    
+    100% {
+        opacity: 100%;
+    }
 }
 
 .navbar {
     border: solid 1px var(--asphalt);
+    padding: 20px;
+    margin: 0 5%;
+    width: 50%;
+    text-align: center;
+    
+    a {
+        margin: 0 5%;
+        text-decoration: none;
+        color: var(--asphalt);
+        text-align: center;
+    }
+    
+    a:hover {
+        border-bottom: dashed 1px var(--espresso);
+        font-weight: 800;
+        color: var(--espresso);
+    }
 }
