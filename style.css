@@ -47,7 +47,9 @@ button:hover {
     cursor: var(--cursor-pointer);
 }
 
-
+#marrom {
+    filter: brightness(0) saturate(100%) invert(89%) sepia(72%) saturate(1141%) hue-rotate(282deg) brightness(109%) contrast(89%);
+}
 
 
 
@@ -128,7 +130,7 @@ header {
 
 .labubu {
     margin-left: 10%;
-   
+    
     .texto {
         background-color: var(--peony);
         border: solid 1.5px var(--espresso);
@@ -166,10 +168,11 @@ header {
         top: 30%;
         transform: rotate(0.05turn);
     }
+    
     #descricao {
         font-weight: 600;
-        font-style:italic;
-        opacity:0.5;
+        font-style: italic;
+        opacity: 0.5;
         font-size: 13px;
         text-align: right;
         width: 550px;
@@ -218,5 +221,30 @@ header {
     
     100% {
         opacity: 100%;
+    }
+}
+
+
+.artistas {
+    line-height: 0.5;
+    margin: 5% 10%;
+}
+
+.artistas .imagensrow {
+    display: flex;
+    overflow: scroll;
+    
+    img {
+        height: 200px;
+        margin: 20px 10px 0 10px;
+        border: solid 1px var(--asphalt);
+        max-width: 200px;
+    }
+}
+
+.cerebro {
+    margin: 5% 10%;
+    img {
+        height: 80px;
     }
 }
