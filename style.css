@@ -5,6 +5,9 @@
     --peony: #f4c9d6;
     --asphalt: #302f2c;
     --paper: #efede3;
+    --bubblegum: #fe61b5;
+    --fern: #3d862d;
+    
     
     --fonte-gracinha: "Tangerine", cursive;
     --fonte-cursiva: "Rouge Script", cursive;
@@ -47,9 +50,6 @@ button:hover {
     cursor: var(--cursor-pointer);
 }
 
-#marrom {
-    filter: brightness(0) saturate(100%) invert(89%) sepia(72%) saturate(1141%) hue-rotate(282deg) brightness(109%) contrast(89%);
-}
 
 
 
@@ -127,7 +127,10 @@ header {
 
 
 
+.labubu .imagemlabubu {
+    background-image: url('/imagens/labubu-brown.png');
 
+}
 .labubu {
     margin-left: 10%;
     
@@ -225,30 +228,39 @@ header {
 }
 
 
-.artistas {
-    line-height: 0.5;
-    margin: 5% 10%;
+
+
+
+
+.menu-acessibilidade{
+    position: fixed;
+    top:2rem;
+    right:20px;
+    z-index: 1000;
 }
 
-.artistas .imagensrow {
+.rotacao-botao{
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+
+.opcoes-acessibilidade{
+    margin-top:10px;
     display: flex;
-    overflow: scroll;
-    
-    img {
-        height: 200px;
-        margin: 20px 10px 0 10px;
-        border: solid 1px var(--asphalt);
-        max-width: 200px;
-    }
+    flex-direction: column;
 }
 
-.cerebro {
-    margin: 5% 10%;
-    img {
-        height: 80px;
-    }
+.opcoes-acessibilidade button{
+    margin-bottom: 5px;
+}
+.apresenta-lista{
+    display: none;
 }
 
 
 
 
+.alto-contraste{
+    background-color: var(--asphalt);
+    color: var(--paper);
+}
