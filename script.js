@@ -56,3 +56,17 @@ ScrollReveal().reveal('#galeria', { delay: 500 });
 ScrollReveal().reveal('#contato', { delay: 500 });
 
 
+
+
+
+
+
+
+
+
+
+
+
+function irParaSecao(secao) {
+  window.location.href = "index2nd.html#" + secao;
+}

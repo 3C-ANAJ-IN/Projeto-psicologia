@@ -245,43 +245,17 @@ header {
 
 
 
-@keyframes apagar {
-    from {
-        width: 7ch;
-        opacity: 1;
-    }
-    
-    to {
-        width: 0ch;
-        opacity: 0;
-    }
+
+
+
+
+.transtornos {
+    padding: 0 10%;
 }
 
-@keyframes digitar {
-    from {
-        width: 0%;
-    }
-    
-    to {
-        width: 100%;
-    }
+.infostranstorno {
+    padding: 50px 0;
 }
-
-@keyframes sumir {
-    0% {
-        opacity: 100%;
-    }
-    
-    50% {
-        opacity: 0%;
-    }
-    
-    100% {
-        opacity: 100%;
-    }
-}
-
-
 
 
 
@@ -335,4 +309,63 @@ header {
 
 .alto-contraste .labubu .labubuimagem {
     background-image: url('/imagens/labubu-green.png');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes apagar {
+    from {
+        width: 7ch;
+        opacity: 1;
+    }
+    
+    to {
+        width: 0ch;
+        opacity: 0;
+    }
+}
+
+@keyframes digitar {
+    from {
+        width: 0%;
+    }
+    
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes sumir {
+    0% {
+        opacity: 100%;
+    }
+    
+    50% {
+        opacity: 0%;
+    }
+    
+    100% {
+        opacity: 100%;
+    }
 }
