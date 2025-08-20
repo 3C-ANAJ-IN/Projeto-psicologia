@@ -3,10 +3,12 @@
 :root {
     --espresso: #3E2723;
     --peony: #f4c9d6;
+    --bubblegum: #fe61b5;
+    --palepink: #fcf1f7;
+    --palegreen: #438361;
+    --fern: #3d862d;
     --asphalt: #302f2c;
     --paper: #efede3;
-    --bubblegum: #fe61b5;
-    --fern: #3d862d;
     --black: #000;
     --white: #fff;
     
@@ -74,23 +76,49 @@ header {
     margin: 0;
 }
 
+#fixedheader {
+    position: fixed;
+    width: 80%;
+    
+    background-color: var(--espresso);
+    display: flex;
+    overflow-x: hidden;
+    justify-content: space-between;
+    padding: 0 10%;
+    align-items: center;
+    
+    h1 {
+        color: var(--peony);
+    }
+}
+
 .navbar {
     gap: 20px;
     width: 50%;
     text-align: right;
     
     
-    a {
-        margin: 0 2%;
+    .decorona {
+        margin: 0 5%;
         text-decoration: none;
         color: var(--peony);
         text-align: center;
         font-size: 1em;
     }
     
-    a:hover {
+    .decorona:hover {
         border-bottom: dashed 1px var(--peony);
         font-weight: 800;
+    }
+    
+    img {
+        height: 25px;
+        width: 25px;
+        filter: brightness(0) saturate(100%) invert(100%) sepia(16%) saturate(7255%) hue-rotate(285deg) brightness(103%) contrast(91%);
+    }
+    
+    img:hover {
+        transform: scale(1.2);
     }
 }
 
@@ -218,6 +246,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
     h5 {
         text-transform: capitalize;
         text-align: left;
@@ -235,6 +264,7 @@ header {
         align-self: flex-start;
         
     }
+    
     img {
         height: 150px;
         filter: brightness(0) saturate(100%) invert(9%) sepia(10%) saturate(3305%) hue-rotate(321deg) brightness(99%) contrast(81%);
@@ -247,10 +277,41 @@ header {
 
 
 
+#fontesbutton {
+    img {
+        height: 20px;
+        margin-right: 20px;
+    }
+    
+    margin-top: 30px;
+    border: 1.5px solid var(--asphalt);
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    background-color: var(--paper);
+}
 
+#fontesbutton:hover {
+    border: var(--peony);
+    color: var(--peony);
+    border: 1.5px solid var(--peony);
+
+    img {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(16%) saturate(7255%) hue-rotate(285deg) brightness(103%) contrast(91%);
+    }
+}
 
 .transtornos {
-    padding: 0 10%;
+    padding: 6% 10% 0 10%;
+    
+    p {
+        text-align: justify;
+    }
+    
+    span {
+        font-weight: bold;
+    }
 }
 
 .infostranstorno {
@@ -310,11 +371,6 @@ header {
 .alto-contraste .labubu .labubuimagem {
     background-image: url('/imagens/labubu-green.png');
 }
-
-
-
-
-
 
 
 
