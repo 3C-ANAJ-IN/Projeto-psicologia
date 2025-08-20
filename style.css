@@ -308,8 +308,9 @@ header {
 .secaofonte {
     padding: 5% 0 0 0;
 }
-
-
+#arrow {
+    margin: 0 0 0 30px;
+}
 .transtornos {
     padding: 6% 10% 0 10%;
     
