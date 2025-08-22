@@ -303,14 +303,22 @@ header {
 
 .fontes {
     padding: 6% 10% 0 10%;
+    text-transform: capitalize;
+
+    span {
+        font-size: 20px;
+        font-weight: 800;
+        margin-right: 10px;
 }
 
 .secaofonte {
     padding: 5% 0 0 0;
 }
+
 #arrow {
     margin: 0 0 0 30px;
 }
+
 .transtornos {
     padding: 6% 10% 0 10%;
     
