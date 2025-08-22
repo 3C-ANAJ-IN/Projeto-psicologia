@@ -189,6 +189,10 @@ header {
     position: relative;
 }
 
+.labubu #descricao {
+    text-align: center;
+}
+
 .labubu .labubuimagem {
     background-image: url('/imagens/labubu-brown.png');
     transform: rotate(0.05turn);
@@ -245,9 +249,7 @@ header {
     font-style: italic;
     opacity: 0.5;
     font-size: 0.7rem;
-    text-align: right;
-    width: 550px;
-    margin: 0 auto;
+    
 }
 
 
@@ -309,160 +311,181 @@ header {
         font-size: 20px;
         font-weight: 800;
         margin-right: 10px;
+        text-decoration: underline solid var(--paper);
+    }
+    
+    p {
+        text-decoration: underline dotted var(--espresso);
     }
     
     .secaofonte {
         padding: 5% 0 0 0;
     }
     
-    .transtornos {
-        padding: 6% 10% 0 10%;
-        
-        p {
-            text-align: justify;
-        }
-        
-        span {
-            font-weight: bold;
-        }
-    }
-    
-    .infostranstorno {
-        padding: 50px 0;
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    .menu-acessibilidade {
-        position: fixed;
-        top: 7rem;
-        right: 20px;
-        z-index: 1000;
-    }
-    
-    .menu-acessibilidade #botao-acessibilidade {
-        font-weight: 600;
-    }
-    
-    .menu-acessibilidade button {
-        background-color: var(--espresso);
-        color: var(--peony);
-        padding: 10px;
+    h2 {
         text-transform: capitalize;
-        border: solid 1.5px var(--espresso);
-        border-radius: 10px;
+    }
+}
+
+#arrow {
+    padding: 0 0 0 20px;
+}
+
+.transtornos {
+    padding: 6% 10% 0 10%;
+    
+    p {
+        text-align: justify;
     }
     
-    .rotacao-botao {
-        transform: rotate(-90deg);
-        transform-origin: right center;
+    span {
+        font-weight: bold;
     }
     
-    .opcoes-acessibilidade {
-        margin-top: 10px;
-        display: flex;
-        flex-direction: column;
+    h2 {
+        text-transform: capitalize;
+    }
+}
+
+.infostranstorno {
+    padding: 50px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu-acessibilidade {
+    position: fixed;
+    top: 7rem;
+    right: 20px;
+    z-index: 1000;
+}
+
+.menu-acessibilidade #botao-acessibilidade {
+    font-weight: 600;
+}
+
+.menu-acessibilidade button {
+    background-color: var(--espresso);
+    color: var(--peony);
+    padding: 10px;
+    text-transform: capitalize;
+    border: solid 1.5px var(--espresso);
+    border-radius: 10px;
+}
+
+.rotacao-botao {
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+
+.opcoes-acessibilidade {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoes-acessibilidade button {
+    margin-bottom: 5px;
+}
+
+.apresenta-lista {
+    display: none;
+}
+
+
+
+.alto-contraste #icontranstorno {
+    filter: brightness(0) saturate(100%) invert(99%) sepia(100%) saturate(2%) hue-rotate(211deg) brightness(102%) contrast(101%);
+}
+
+.alto-contraste {
+    background-color: var(--asphalt);
+    color: var(--paper);
+}
+
+.alto-contraste .labubu .labubuimagem {
+    background-image: url('/imagens/labubu-green.png');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes apagar {
+    from {
+        width: 7ch;
+        opacity: 1;
     }
     
-    .opcoes-acessibilidade button {
-        margin-bottom: 5px;
+    to {
+        width: 0ch;
+        opacity: 0;
+    }
+}
+
+@keyframes digitar {
+    from {
+        width: 0%;
     }
     
-    .apresenta-lista {
-        display: none;
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes sumir {
+    0% {
+        opacity: 100%;
     }
     
-    
-    
-    
-    .alto-contraste {
-        background-color: var(--asphalt);
-        color: var(--paper);
+    50% {
+        opacity: 0%;
     }
     
-    .alto-contraste .labubu .labubuimagem {
-        background-image: url('/imagens/labubu-green.png');
+    100% {
+        opacity: 100%;
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    @keyframes apagar {
-        from {
-            width: 7ch;
-            opacity: 1;
-        }
-        
-        to {
-            width: 0ch;
-            opacity: 0;
-        }
+}
+
+
+
+@keyframes surgir {
+    from {
+        opacity: 0;
     }
     
-    @keyframes digitar {
-        from {
-            width: 0%;
-        }
-        
-        to {
-            width: 100%;
-        }
+    to {
+        opacity: 1
     }
-    
-    @keyframes sumir {
-        0% {
-            opacity: 100%;
-        }
-        
-        50% {
-            opacity: 0%;
-        }
-        
-        100% {
-            opacity: 100%;
-        }
-        
-    }
-    
-    
-    
-    @keyframes surgir {
-        from {
-            opacity: 0;
-        }
-        
-        to {
-            opacity: 1
-        }
-    }
+}
