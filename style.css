@@ -4,11 +4,13 @@
     --espresso: #3E2723;
     --peony: #f4c9d6;
     --bubblegum: #fe61b5;
+    --strawberry: #c04e6c;
     --palepink: #fcf1f7;
     --palegreen: #438361;
     --fern: #3d862d;
+    --acid: #7ed957;
     --asphalt: #302f2c;
-    --paper: #efede3;
+    --white: #efede3;
     --black: #000;
     --white: #fff;
     
@@ -20,17 +22,17 @@ html {
     animation: surgir 2s forwards 1;
     scroll-behavior: smooth;
     padding: 0 0 50px 0;
+    user-select: none;
 }
 
 body {
     margin: 0;
     padding: 0;
     line-height: 1.5;
-    background-color: var(--paper);
+    background-color: var(--white);
     color: var(--espresso);
     font-family: var(--fonte-padrao);
     cursor: var(--cursor-auto);
-    user-select: none;
 }
 
 a {
@@ -56,7 +58,7 @@ button:hover {
     padding: 10px 15px;
     font-weight: 900;
     text-transform: uppercase;
-    background-color: var(--paper);
+    background-color: var(--white);
 }
 
 #fontesbutton:hover {
@@ -185,58 +187,59 @@ header {
 
 
 .labubu {
-    margin-left: 5%;
+    margin-left: 0;
     position: relative;
 }
 
 .labubu .labubuimagem {
     background-image: url('/imagens/labubu-brown.png');
     transform: rotate(0.05turn);
-    height: 350px;
+    min-height: 100%;
     width: 350px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     
-    z-index: 50px;
+    z-index: 50;
     position: absolute;
-    top: 20%;
-    right: 5%;
+    top: 16%;
+    right: 10%;
 }
 
 
 
 .labubu .texto {
     background-color: var(--peony);
-    border: solid 1.5px var(--espresso);
+    border: solid 1.5px var(--strawberry);
     padding: 2% 5%;
     margin: 5% 10%;
     border-radius: 50px;
     text-align: justify;
-    width: 60%;
+    width: 50%;
 }
 
 .labubu .texto p {
-    margin: 0 5%;
+    margin: 0 10% 0 0;
 }
 
 .labubu span {
     font-size: 20px;
     font-weight: 900;
+    color: var(--strawberry);
 }
 
-.labubu button {
+#lermateriabutton {
     text-transform: capitalize;
-    background-color: var(--espresso);
+    background-color: var(--strawberry);
     font-weight: 600;
     color: var(--peony);
-    border: solid 2px var(--espresso);
-    padding: 2% 5%;
+    border: solid 2px var(--strawberry);
+    padding: 10px 15px;
     border-radius: 25px;
     margin: 1% 5%;
 }
 
-.labubu button:hover {
+#lermateriabutton:hover {
     transform: scale(1.1);
 }
 
@@ -252,12 +255,19 @@ header {
 
 
 
+
+
+
+
+
+
+
 .saibamais {
-    margin: 0 6%;
+    margin: 10% 6%;
 }
 
 .saibamais span {
-    color: var(--bubblegum);
+    color: var(--strawberry);
 }
 
 .saibamais .row {
@@ -268,28 +278,29 @@ header {
 
 #card {
     padding: 20px;
-    border: 1.5px solid var(--espresso);
+    border: 1.5px solid var(--strawberry);
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     
+    
     h5 {
         text-transform: capitalize;
         text-align: left;
+        font-size: 15px;
     }
     
     button {
-        background-color: var(--peony);
-        color: var(--espresso);
-        border: solid 1.5px var(--espresso);
+        background-color: var(--strawberry);
+        color: var(--white);
+        border: solid 1.5px var(--strawberry);
         border-radius: 30px;
         padding: 10px;
-        font-size: 15px;
-        text-transform: capitalize;
+        text-size: 10px;
+        text-transform: uppercase;
         font-weight: 600;
         align-self: flex-start;
-        
     }
     
     img {
@@ -297,6 +308,65 @@ header {
         filter: brightness(0) saturate(100%) invert(9%) sepia(10%) saturate(3305%) hue-rotate(321deg) brightness(99%) contrast(81%);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.esquizofrenia {
+    background-color: var(--espresso);
+    max-height: fit-content;
+    padding: 80px 100px;
+    margin: 80px 0;
+    text-align: justify;
+    
+    h1 {
+        color: var(--white);
+    }
+    
+    p {
+        color: var(--white);
+        width: 600px;
+    }
+    
+    span {
+        color: var(--strawberry);
+    }
+    
+    #lermateriabutton {
+        background-color: var(--strawberry);
+        margin: 0;
+    }
+}
+
+.flexesquizo {
+    display: flex;
+    gap: 100px;
+}
+
+.imgesquizofrenia {
+    background-image: url('/imagens/esquizofrenia-brown.png');
+    min-height: 100%;
+    width: 1150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 50;
+}
+
+
+
+
+
+
 
 
 .fontes {
@@ -307,7 +377,7 @@ header {
         font-size: 20px;
         font-weight: 800;
         margin-right: 10px;
-        text-decoration: underline solid var(--paper);
+        text-decoration: underline solid var(--white);
     }
     
     p {
@@ -326,6 +396,23 @@ header {
 #arrow {
     padding: 0 0 0 20px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .transtornos {
     padding: 6% 10% 0 10%;
@@ -412,7 +499,7 @@ header {
 
 .alto-contraste {
     background-color: var(--asphalt);
-    color: var(--paper);
+    color: var(--white);
 }
 
 .alto-contraste .labubu .labubuimagem {
